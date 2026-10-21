@@ -1,0 +1,50 @@
+name: Importa archivio del project work
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'PW23_Rosellini_GitHub_Pubblico.zip'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  importazione:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recupera la repository
+        uses: actions/checkout@v4
+      - name: Controlla ed estrai il pacchetto
+        run: |
+          set -euo pipefail
+          echo '7b85eaddbefde4e6490195db15de18ad35b6968876ebce4da0fdc3e8fa469059  PW23_Rosellini_GitHub_Pubblico.zip' | sha256sum -c -
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          from zipfile import ZipFile
+
+          archive = Path('PW23_Rosellini_GitHub_Pubblico.zip')
+          with ZipFile(archive) as package:
+              for member in package.infolist():
+                  p = PurePosixPath(member.filename)
+                  if p.is_absolute() or '..' in p.parts:
+                      raise ValueError('Percorso non consentito: ' + member.filename)
+                  if member.is_dir():
+                      continue
+                  # I flussi GitHub Actions sono gia' presenti nella repository.
+                  if p.parts[:2] == ('.github', 'workflows'):
+                      continue
+                  target = Path(*p.parts)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(package.read(member))
+          archive.unlink()
+          PY
+      - name: Salva il progetto nella repository
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Importa codice, dati e sito del project work'
+          git push
