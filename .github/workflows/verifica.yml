@@ -3,7 +3,14 @@ name: Verifica del progetto
 on:
   push:
     branches: [main]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'data/**'
+      - 'web/**'
+      - 'docs/**'
   pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
