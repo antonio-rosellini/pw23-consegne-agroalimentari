@@ -1,0 +1,24 @@
+test_01_instance_valid (test_project.TestProjectWork.test_01_instance_valid) ... ok
+test_02_customer_count_and_demand (test_project.TestProjectWork.test_02_customer_count_and_demand) ... ok
+test_03_120_single_vehicle_orders (test_project.TestProjectWork.test_03_120_single_vehicle_orders) ... ok
+test_04_single_route_global_minimum (test_project.TestProjectWork.test_04_single_route_global_minimum) ... ok
+test_05_reverse_route_same_length (test_project.TestProjectWork.test_05_reverse_route_same_length) ... ok
+test_06_two_vehicles_5_partitions_60_pairs (test_project.TestProjectWork.test_06_two_vehicles_5_partitions_60_pairs) ... ok
+test_07_two_vehicles_optimum (test_project.TestProjectWork.test_07_two_vehicles_optimum) ... ok
+test_08_all_candidates_respect_constraints (test_project.TestProjectWork.test_08_all_candidates_respect_constraints) ... ok
+test_09_independent_exhaustive_check (test_project.TestProjectWork.test_09_independent_exhaustive_check)
+Secondo enumeratore, indipendente dalle funzioni del programma. ... ok
+test_10_hours_sum_vs_parallel_completion (test_project.TestProjectWork.test_10_hours_sum_vs_parallel_completion) ... ok
+test_11_costs_and_winner (test_project.TestProjectWork.test_11_costs_and_winner) ... ok
+test_12_break_even_and_sensitivity (test_project.TestProjectWork.test_12_break_even_and_sensitivity) ... ok
+test_13_modified_data_detected (test_project.TestProjectWork.test_13_modified_data_detected) ... ok
+test_14_invalid_capacity_detected (test_project.TestProjectWork.test_14_invalid_capacity_detected) ... ok
+test_15_zero_edge_detected (test_project.TestProjectWork.test_15_zero_edge_detected) ... ok
+test_16_export_and_content (test_project.TestProjectWork.test_16_export_and_content) ... ok
+test_17_reproducibility (test_project.TestProjectWork.test_17_reproducibility) ... ok
+test_18_road_triangle_inequality_not_assumed (test_project.TestProjectWork.test_18_road_triangle_inequality_not_assumed) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.013s
+
+OK

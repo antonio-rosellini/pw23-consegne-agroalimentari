@@ -1,0 +1,14 @@
+﻿costo_chilometrico_A_eur_km,costo_totale_A_eur,costo_totale_B_eur,differenza_B_meno_A_eur,configurazione_conveniente,prezzo_base,pareggio
+0.5,221.12,240.94,19.82,A,False,False
+0.55,225.4,240.94,15.54,A,False,False
+0.6,229.68,240.94,11.26,A,False,False
+0.65,233.96,240.94,6.98,A,False,False
+0.7,238.24,240.94,2.7,A,False,False
+0.72,239.95,240.94,0.99,A,True,False
+0.73155763,240.94,240.94,0.0,parità,False,True
+0.75,242.52,240.94,-1.58,B,False,False
+0.8,246.8,240.94,-5.86,B,False,False
+0.85,251.08,240.94,-10.14,B,False,False
+0.9,255.36,240.94,-14.42,B,False,False
+0.95,259.64,240.94,-18.7,B,False,False
+1.0,263.92,240.94,-22.98,B,False,False

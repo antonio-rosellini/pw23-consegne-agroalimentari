@@ -1,0 +1,22 @@
+PIANIFICAZIONE DELLE CONSEGNE - BARI
+Adriatica Fresco Distribuzione S.r.l. (caso simulato)
+
+Scenario A - un veicolo refrigerato (1.100 kg)
+  Percorso: Bari -> Bitonto -> Modugno -> Triggiano -> Noicattaro -> Mola di Bari -> Bari
+  Distanza: 85.6 km | carico: 1000 kg
+  Percorsi valutati: 120; ottimi equivalenti: 2
+  Ore operative: 3.15 | costo: 239.95 EUR
+
+Scenario B - due veicoli identici (600 kg ciascuno)
+  Veicolo 1: Bari -> Modugno -> Bitonto -> Bari | 37.0 km | 400 kg
+  Veicolo 2: Bari -> Triggiano -> Noicattaro -> Mola di Bari -> Bari | 51.6 km | 600 kg
+  Distanza totale: 88.6 km
+  Partizioni valide: 5; coppie di itinerari valutate: 60
+  Ore-autista: 3.22 | completamento: 1.90 ore
+  Costo: 240.94 EUR
+
+Differenza B - A: 0.99 EUR
+Scenario meno costoso ai parametri di base: A
+Punto di pareggio al variare del costo chilometrico del veicolo A: 0.731558 EUR/km
+
+Distanze derivate da stime pubbliche dei centri comunali; costi e velocità sono ipotesi di studio.

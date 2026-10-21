@@ -1,0 +1,7 @@
+﻿id,localita,tipo,quantita_kg,latitudine,longitudine
+D,Bari,deposito,0,41.12578,16.86203
+C1,Modugno,cliente,180,41.08256,16.78055
+C2,Bitonto,cliente,220,41.1085,16.69155
+C3,Triggiano,cliente,160,41.06345,16.9217
+C4,Noicattaro,cliente,210,41.03229,16.98771
+C5,Mola di Bari,cliente,230,41.06094,17.08729

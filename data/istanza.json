@@ -1,0 +1,150 @@
+{
+  "project_id": "PW23-Antonio-Rosellini-Bari",
+  "student": {
+    "name": "Antonio",
+    "surname": "Rosellini",
+    "student_id": "",
+    "course": "Informatica per le Aziende Digitali (L-31)"
+  },
+  "theme": {
+    "number": 1,
+    "title": "La digitalizzazione dell’impresa"
+  },
+  "assignment": {
+    "number": 23,
+    "title": "Sviluppo di un codice Python per la pianificazione e il confronto economico dei percorsi di consegna di un’impresa agroalimentare"
+  },
+  "case_study": {
+    "company": "Adriatica Fresco Distribuzione S.r.l.",
+    "company_type": "impresa agroalimentare di fantasia, distributore di prodotti freschi e refrigerati",
+    "depot_city": "Bari",
+    "note": "Caso simulato: ragione sociale non riferita a una società reale."
+  },
+  "reference_date": "2026-10-16",
+  "distance_matrix_method": "approssimazione stradale simmetrica da valori web pubblici tra centri comunali; media dei due versi ove disponibili; altrimenti proxy dell’unico verso disponibile",
+  "distance_data_status": "dataset derivato da fonti web, NON un rilievo certificato né risultato diretto di una API di routing sul singolo deposito/cliente",
+  "locations": [
+    {
+      "id": "D",
+      "name": "Bari",
+      "role": "deposito",
+      "demand_kg": 0,
+      "lat": 41.12578,
+      "lon": 16.86203
+    },
+    {
+      "id": "C1",
+      "name": "Modugno",
+      "role": "cliente",
+      "demand_kg": 180,
+      "lat": 41.08256,
+      "lon": 16.78055
+    },
+    {
+      "id": "C2",
+      "name": "Bitonto",
+      "role": "cliente",
+      "demand_kg": 220,
+      "lat": 41.1085,
+      "lon": 16.69155
+    },
+    {
+      "id": "C3",
+      "name": "Triggiano",
+      "role": "cliente",
+      "demand_kg": 160,
+      "lat": 41.06345,
+      "lon": 16.9217
+    },
+    {
+      "id": "C4",
+      "name": "Noicattaro",
+      "role": "cliente",
+      "demand_kg": 210,
+      "lat": 41.03229,
+      "lon": 16.98771
+    },
+    {
+      "id": "C5",
+      "name": "Mola di Bari",
+      "role": "cliente",
+      "demand_kg": 230,
+      "lat": 41.06094,
+      "lon": 17.08729
+    }
+  ],
+  "distance_km": [
+    [
+      0.0,
+      9.5,
+      18.0,
+      11.0,
+      17.5,
+      22.0
+    ],
+    [
+      9.5,
+      0.0,
+      9.5,
+      17.5,
+      22.5,
+      29.0
+    ],
+    [
+      18.0,
+      9.5,
+      0.0,
+      31.0,
+      37.0,
+      42.5
+    ],
+    [
+      11.0,
+      17.5,
+      31.0,
+      0.0,
+      8.0,
+      18.0
+    ],
+    [
+      17.5,
+      22.5,
+      37.0,
+      8.0,
+      0.0,
+      10.6
+    ],
+    [
+      22.0,
+      29.0,
+      42.5,
+      18.0,
+      10.6,
+      0.0
+    ]
+  ],
+  "fleet_scenarios": {
+    "A": {
+      "vehicles": 1,
+      "capacity_kg_per_vehicle": 1100,
+      "fixed_cost_eur_per_vehicle_day": 120.0,
+      "variable_cost_eur_km": 0.72
+    },
+    "B": {
+      "vehicles": 2,
+      "capacity_kg_per_vehicle": 600,
+      "fixed_cost_eur_per_vehicle_day": 65.0,
+      "variable_cost_eur_km": 0.58
+    }
+  },
+  "operation": {
+    "speed_kmh_assumed": 45.0,
+    "service_minutes_per_customer": 15,
+    "driver_eur_hour": 18.5,
+    "return_to_depot": true,
+    "split_deliveries_allowed": false,
+    "each_customer_visited_once": true,
+    "road_tolls_separately_accounted": false
+  },
+  "distance_sources_filename": "fonti_distanze.csv"
+}

@@ -1,0 +1,479 @@
+{
+  "project": "PW23-Antonio-Rosellini-Bari",
+  "student": {
+    "name": "Antonio",
+    "surname": "Rosellini",
+    "student_id": "",
+    "course": "Informatica per le Aziende Digitali (L-31)"
+  },
+  "case_study": {
+    "company": "Adriatica Fresco Distribuzione S.r.l.",
+    "company_type": "impresa agroalimentare di fantasia, distributore di prodotti freschi e refrigerati",
+    "depot_city": "Bari",
+    "note": "Caso simulato: ragione sociale non riferita a una società reale."
+  },
+  "instance_reference_date": "2026-10-16",
+  "input_distance_method": "approssimazione stradale simmetrica da valori web pubblici tra centri comunali; media dei due versi ove disponibili; altrimenti proxy dell’unico verso disponibile",
+  "input_distance_status": "dataset derivato da fonti web, NON un rilievo certificato né risultato diretto di una API di routing sul singolo deposito/cliente",
+  "nodes": [
+    {
+      "id": "D",
+      "name": "Bari",
+      "role": "deposito",
+      "demand_kg": 0,
+      "lat": 41.12578,
+      "lon": 16.86203
+    },
+    {
+      "id": "C1",
+      "name": "Modugno",
+      "role": "cliente",
+      "demand_kg": 180,
+      "lat": 41.08256,
+      "lon": 16.78055
+    },
+    {
+      "id": "C2",
+      "name": "Bitonto",
+      "role": "cliente",
+      "demand_kg": 220,
+      "lat": 41.1085,
+      "lon": 16.69155
+    },
+    {
+      "id": "C3",
+      "name": "Triggiano",
+      "role": "cliente",
+      "demand_kg": 160,
+      "lat": 41.06345,
+      "lon": 16.9217
+    },
+    {
+      "id": "C4",
+      "name": "Noicattaro",
+      "role": "cliente",
+      "demand_kg": 210,
+      "lat": 41.03229,
+      "lon": 16.98771
+    },
+    {
+      "id": "C5",
+      "name": "Mola di Bari",
+      "role": "cliente",
+      "demand_kg": 230,
+      "lat": 41.06094,
+      "lon": 17.08729
+    }
+  ],
+  "distance_km": [
+    [
+      0.0,
+      9.5,
+      18.0,
+      11.0,
+      17.5,
+      22.0
+    ],
+    [
+      9.5,
+      0.0,
+      9.5,
+      17.5,
+      22.5,
+      29.0
+    ],
+    [
+      18.0,
+      9.5,
+      0.0,
+      31.0,
+      37.0,
+      42.5
+    ],
+    [
+      11.0,
+      17.5,
+      31.0,
+      0.0,
+      8.0,
+      18.0
+    ],
+    [
+      17.5,
+      22.5,
+      37.0,
+      8.0,
+      0.0,
+      10.6
+    ],
+    [
+      22.0,
+      29.0,
+      42.5,
+      18.0,
+      10.6,
+      0.0
+    ]
+  ],
+  "fleet_scenarios": {
+    "A": {
+      "vehicles": 1,
+      "capacity_kg_per_vehicle": 1100,
+      "fixed_cost_eur_per_vehicle_day": 120.0,
+      "variable_cost_eur_km": 0.72
+    },
+    "B": {
+      "vehicles": 2,
+      "capacity_kg_per_vehicle": 600,
+      "fixed_cost_eur_per_vehicle_day": 65.0,
+      "variable_cost_eur_km": 0.58
+    }
+  },
+  "operation": {
+    "speed_kmh_assumed": 45.0,
+    "service_minutes_per_customer": 15,
+    "driver_eur_hour": 18.5,
+    "return_to_depot": true,
+    "split_deliveries_allowed": false,
+    "each_customer_visited_once": true,
+    "road_tolls_separately_accounted": false
+  },
+  "optimization_objective": "Distanza complessiva minima (non costo minimo)",
+  "single_vehicle": {
+    "route": {
+      "nodes": [
+        "D",
+        "C2",
+        "C1",
+        "C3",
+        "C4",
+        "C5",
+        "D"
+      ],
+      "cities": [
+        "Bari",
+        "Bitonto",
+        "Modugno",
+        "Triggiano",
+        "Noicattaro",
+        "Mola di Bari",
+        "Bari"
+      ],
+      "customer_ids": [
+        "C2",
+        "C1",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "distance_km": 85.6,
+      "load_kg": 1000,
+      "customers_served": 5
+    },
+    "minimum_distance_km": 85.6,
+    "evaluated_routes": 120,
+    "optimal_route_count": 2,
+    "all_best_routes": [
+      [
+        "D",
+        "C2",
+        "C1",
+        "C3",
+        "C4",
+        "C5",
+        "D"
+      ],
+      [
+        "D",
+        "C5",
+        "C4",
+        "C3",
+        "C1",
+        "C2",
+        "D"
+      ]
+    ]
+  },
+  "two_vehicles": {
+    "routes": [
+      {
+        "nodes": [
+          "D",
+          "C1",
+          "C2",
+          "D"
+        ],
+        "cities": [
+          "Bari",
+          "Modugno",
+          "Bitonto",
+          "Bari"
+        ],
+        "customer_ids": [
+          "C1",
+          "C2"
+        ],
+        "distance_km": 37.0,
+        "load_kg": 400,
+        "customers_served": 2
+      },
+      {
+        "nodes": [
+          "D",
+          "C3",
+          "C4",
+          "C5",
+          "D"
+        ],
+        "cities": [
+          "Bari",
+          "Triggiano",
+          "Noicattaro",
+          "Mola di Bari",
+          "Bari"
+        ],
+        "customer_ids": [
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "distance_km": 51.6,
+        "load_kg": 600,
+        "customers_served": 3
+      }
+    ],
+    "minimum_distance_km": 88.6,
+    "feasible_partitions": 5,
+    "evaluated_route_pairs": 60,
+    "optimal_pair_count": 4,
+    "all_best_route_pairs": [
+      [
+        [
+          "D",
+          "C1",
+          "C2",
+          "D"
+        ],
+        [
+          "D",
+          "C3",
+          "C4",
+          "C5",
+          "D"
+        ]
+      ],
+      [
+        [
+          "D",
+          "C1",
+          "C2",
+          "D"
+        ],
+        [
+          "D",
+          "C5",
+          "C4",
+          "C3",
+          "D"
+        ]
+      ],
+      [
+        [
+          "D",
+          "C2",
+          "C1",
+          "D"
+        ],
+        [
+          "D",
+          "C3",
+          "C4",
+          "C5",
+          "D"
+        ]
+      ],
+      [
+        [
+          "D",
+          "C2",
+          "C1",
+          "D"
+        ],
+        [
+          "D",
+          "C5",
+          "C4",
+          "C3",
+          "D"
+        ]
+      ]
+    ]
+  },
+  "economic_comparison": {
+    "scenario_A": {
+      "vehicles": 1,
+      "total_distance_km": 85.6,
+      "vehicle_hours": [
+        3.152222
+      ],
+      "total_driver_hours": 3.152222,
+      "completion_hours": 3.152222,
+      "km_price_eur_km": 0.72,
+      "fixed_eur": 120.0,
+      "distance_cost_eur": 61.63,
+      "driver_cost_eur": 58.32,
+      "total_eur": 239.95
+    },
+    "scenario_B": {
+      "vehicles": 2,
+      "total_distance_km": 88.6,
+      "vehicle_hours": [
+        1.322222,
+        1.896667
+      ],
+      "total_driver_hours": 3.218889,
+      "completion_hours": 1.896667,
+      "km_price_eur_km": 0.58,
+      "fixed_eur": 130.0,
+      "distance_cost_eur": 51.39,
+      "driver_cost_eur": 59.55,
+      "total_eur": 240.94
+    },
+    "difference_B_minus_A_eur": 0.99,
+    "less_expensive_scenario": "A",
+    "distance_difference_B_minus_A_km": 3.0,
+    "completion_reduction_with_B_percent": 39.8308
+  },
+  "sensitivity": {
+    "parameter_varied": "Costo variabile chilometrico del veicolo A",
+    "unit": "EUR/km",
+    "base_price_eur_km": 0.72,
+    "break_even_price_eur_km": 0.731558,
+    "break_even_note": "Soglia teorica con costi non arrotondati; i costi a video sono espressi in centesimi.",
+    "records": [
+      {
+        "price_A_eur_km": 0.5,
+        "cost_A_eur": 221.12,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": 19.82,
+        "cheaper": "A",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.55,
+        "cost_A_eur": 225.4,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": 15.54,
+        "cheaper": "A",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.6,
+        "cost_A_eur": 229.68,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": 11.26,
+        "cheaper": "A",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.65,
+        "cost_A_eur": 233.96,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": 6.98,
+        "cheaper": "A",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.7,
+        "cost_A_eur": 238.24,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": 2.7,
+        "cheaper": "A",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.72,
+        "cost_A_eur": 239.95,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": 0.99,
+        "cheaper": "A",
+        "is_base_price": true,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.73155763,
+        "cost_A_eur": 240.94,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": 0.0,
+        "cheaper": "parità",
+        "is_base_price": false,
+        "is_break_even_price": true
+      },
+      {
+        "price_A_eur_km": 0.75,
+        "cost_A_eur": 242.52,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": -1.58,
+        "cheaper": "B",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.8,
+        "cost_A_eur": 246.8,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": -5.86,
+        "cheaper": "B",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.85,
+        "cost_A_eur": 251.08,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": -10.14,
+        "cheaper": "B",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.9,
+        "cost_A_eur": 255.36,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": -14.42,
+        "cheaper": "B",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 0.95,
+        "cost_A_eur": 259.64,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": -18.7,
+        "cheaper": "B",
+        "is_base_price": false,
+        "is_break_even_price": false
+      },
+      {
+        "price_A_eur_km": 1.0,
+        "cost_A_eur": 263.92,
+        "cost_B_eur": 240.94,
+        "difference_B_minus_A_eur": -22.98,
+        "cheaper": "B",
+        "is_base_price": false,
+        "is_break_even_price": false
+      }
+    ]
+  },
+  "notes": [
+    "Le distanze sono stime stradali normalizzate riferite ai centri comunali.",
+    "Noleggi, costi chilometrici e velocità sono ipotesi didattiche.",
+    "Gli itinerari non considerano traffico in tempo reale, vincoli orari o pedaggi separati.",
+    "I percorsi sono ottimi rispetto alla matrice fornita; non rappresentano itinerari verificati in strada."
+  ]
+}

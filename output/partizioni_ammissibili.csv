@@ -1,0 +1,6 @@
+﻿gruppo_1,gruppo_2,carico_1_kg,carico_2_kg,coppie_percorsi_esaminate,distanza_minima_km,miglior_giro_1,miglior_giro_2
+C1 C2,C3 C4 C5,400,600,12,88.6,D C1 C2 D,D C3 C4 C5 D
+C1 C5,C2 C3 C4,410,590,12,134.5,D C1 C5 D,D C2 C4 C3 D
+C1 C2 C3,C4 C5,560,440,12,106.1,D C2 C1 C3 D,D C4 C5 D
+C1 C3 C4,C2 C5,550,450,12,133.5,D C1 C4 C3 D,D C2 C5 D
+C1 C3 C5,C2 C4,570,430,12,139.5,D C1 C3 C5 D,D C2 C4 D

@@ -1,0 +1,16 @@
+﻿da,a,km_da_a,km_a_da,km_simmetrici_modello,criterio,fonte_da_a,fonte_a_da
+Bari,Modugno,9,10,9.5,media_bidirezionale,https://www.percorsomigliore.com/distanza/bari-75-it/modugno/,https://www.percorsomigliore.com/distanza/modugno/bari-75-it/
+Bari,Bitonto,17,19,18.0,media_bidirezionale,https://www.percorsomigliore.com/distanza/bari-75-it/bitonto/,https://www.percorsomigliore.com/distanza/bitonto/bari-75-it/
+Bari,Triggiano,11,11,11.0,media_bidirezionale,https://www.percorsomigliore.com/distanza/bari-75-it/triggiano/,https://www.percorsomigliore.com/distanza/triggiano/bari-75-it/
+Bari,Noicattaro,18,17,17.5,media_bidirezionale,https://www.percorsomigliore.com/distanza/bari-75-it/noicattaro/,https://www.percorsomigliore.com/distanza/noicattaro/bari-75-it/
+Bari,Mola di Bari,,22,22.0,proxy_una_direzione,,https://www.percorsomigliore.com/distanza/mola-di-bari/bari-75-it/
+Modugno,Bitonto,9,10,9.5,media_bidirezionale,https://www.percorsomigliore.com/distanza/modugno/bitonto/,https://www.percorsomigliore.com/distanza/bitonto/modugno/
+Modugno,Triggiano,18,17,17.5,media_bidirezionale,https://percorsostrada.it/itinerario/modugno-triggiano/,https://www.percorsomigliore.com/distanza/triggiano/modugno/
+Modugno,Noicattaro,22,23,22.5,media_bidirezionale,https://www.percorsomigliore.com/distanza/modugno/noicattaro/,https://www.percorsomigliore.com/distanza/noicattaro/modugno/
+Modugno,Mola di Bari,29,29,29.0,media_bidirezionale,https://www.percorsomigliore.com/distanza/modugno/mola-di-bari/,https://www.percorsomigliore.com/distanza/mola-di-bari/modugno/
+Bitonto,Triggiano,,31,31.0,proxy_una_direzione,,https://www.percorsomigliore.com/distanza/triggiano/bitonto/
+Bitonto,Noicattaro,,37,37.0,proxy_una_direzione,,https://www.percorsomigliore.com/distanza/noicattaro/bitonto/
+Bitonto,Mola di Bari,42,43,42.5,media_bidirezionale,https://www.percorsomigliore.com/distanza/bitonto/mola-di-bari/,https://www.percorsomigliore.com/distanza/mola-di-bari/bitonto/
+Triggiano,Noicattaro,8,,8.0,proxy_una_direzione,https://www.percorsomigliore.com/distanza/triggiano/noicattaro/,
+Triggiano,Mola di Bari,,18,18.0,proxy_una_direzione,,https://www.percorsomigliore.com/distanza/mola-di-bari/triggiano/
+Noicattaro,Mola di Bari,10.2,11,10.6,media_bidirezionale,https://www.rome2rio.com/it/s/Noicattaro/Mola-di-Bari,https://percorsostrada.it/itinerario/mola-di-bari-noicattaro/

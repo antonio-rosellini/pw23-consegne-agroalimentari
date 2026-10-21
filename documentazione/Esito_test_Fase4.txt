@@ -1,0 +1,44 @@
+test_01_distance_A (test_audit_economico.TestVerificaEconomica.test_01_distance_A) ... ok
+test_02_distance_B (test_audit_economico.TestVerificaEconomica.test_02_distance_B) ... ok
+test_03_enumeration (test_audit_economico.TestVerificaEconomica.test_03_enumeration) ... ok
+test_04_economic_delta (test_audit_economico.TestVerificaEconomica.test_04_economic_delta) ... ok
+test_05_break_even_prices (test_audit_economico.TestVerificaEconomica.test_05_break_even_prices) ... ok
+test_06_parallel_completion (test_audit_economico.TestVerificaEconomica.test_06_parallel_completion) ... ok
+test_01_instance_valid (test_project.TestProjectWork.test_01_instance_valid) ... ok
+test_02_customer_count_and_demand (test_project.TestProjectWork.test_02_customer_count_and_demand) ... ok
+test_03_120_single_vehicle_orders (test_project.TestProjectWork.test_03_120_single_vehicle_orders) ... ok
+test_04_single_route_global_minimum (test_project.TestProjectWork.test_04_single_route_global_minimum) ... ok
+test_05_reverse_route_same_length (test_project.TestProjectWork.test_05_reverse_route_same_length) ... ok
+test_06_two_vehicles_5_partitions_60_pairs (test_project.TestProjectWork.test_06_two_vehicles_5_partitions_60_pairs) ... ok
+test_07_two_vehicles_optimum (test_project.TestProjectWork.test_07_two_vehicles_optimum) ... ok
+test_08_all_candidates_respect_constraints (test_project.TestProjectWork.test_08_all_candidates_respect_constraints) ... ok
+test_09_independent_exhaustive_check (test_project.TestProjectWork.test_09_independent_exhaustive_check)
+Secondo enumeratore, indipendente dalle funzioni del programma. ... ok
+test_10_hours_sum_vs_parallel_completion (test_project.TestProjectWork.test_10_hours_sum_vs_parallel_completion) ... ok
+test_11_costs_and_winner (test_project.TestProjectWork.test_11_costs_and_winner) ... ok
+test_12_break_even_and_sensitivity (test_project.TestProjectWork.test_12_break_even_and_sensitivity) ... ok
+test_13_modified_data_detected (test_project.TestProjectWork.test_13_modified_data_detected) ... ok
+test_14_invalid_capacity_detected (test_project.TestProjectWork.test_14_invalid_capacity_detected) ... ok
+test_15_zero_edge_detected (test_project.TestProjectWork.test_15_zero_edge_detected) ... ok
+test_16_export_and_content (test_project.TestProjectWork.test_16_export_and_content) ... ok
+test_17_reproducibility (test_project.TestProjectWork.test_17_reproducibility) ... ok
+test_18_road_triangle_inequality_not_assumed (test_project.TestProjectWork.test_18_road_triangle_inequality_not_assumed) ... ok
+test_configurazione_interattiva_da_output (test_web.TestPaginaWeb.test_configurazione_interattiva_da_output) ... ok
+test_grafi_e_tabella_sensibilita (test_web.TestPaginaWeb.test_grafi_e_tabella_sensibilita) ... ok
+test_matrice_e_quantita_corrispondenti (test_web.TestPaginaWeb.test_matrice_e_quantita_corrispondenti) ... ok
+test_nessuna_dipendenza_di_rete (test_web.TestPaginaWeb.test_nessuna_dipendenza_di_rete) ... ok
+test_percorsi_ottimi_corrispondono_al_json (test_web.TestPaginaWeb.test_percorsi_ottimi_corrispondono_al_json) ... ok
+test_rigenerazione_identica (test_web.TestPaginaWeb.test_rigenerazione_identica) ... ok
+test_risultati_economici_presenti (test_web.TestPaginaWeb.test_risultati_economici_presenti) ... ok
+test_tutti_i_nodi_comparsi (test_web.TestPaginaWeb.test_tutti_i_nodi_comparsi) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.015s
+
+OK
+Verifica indipendente completata:
+- TSP: 120 ordini, minimo 85.6 km
+- Due veicoli: 10 assegnazioni etichettate, 120 coppie; minimo 88.6 km
+- Costi: 239.95 EUR (A); 240.94 EUR (B)
+- Prezzo di pareggio A: 0.7315576323987538940809968842 EUR/km
+- Noleggio di pareggio A: 120.9893333333333333333333333 EUR/giorno

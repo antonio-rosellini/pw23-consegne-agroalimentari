@@ -1,0 +1,67 @@
+{
+  "student": {
+    "name": "Antonio",
+    "surname": "Rosellini",
+    "student_id": "",
+    "course": "Informatica per le Aziende Digitali (L-31)"
+  },
+  "case_study": "Adriatica Fresco Distribuzione S.r.l.",
+  "distances_are_estimates": true,
+  "source_dataset": "data/istanza.json",
+  "verified_against": "output/risultati.json",
+  "counts": {
+    "tsp_orders": 120,
+    "labelled_feasible_assignments": 10,
+    "labelled_route_pairs": 120,
+    "unlabelled_feasible_assignments": 5,
+    "unlabelled_route_pairs": 60,
+    "tied_optimal_tsp_routes": 2,
+    "tied_optimal_labelled_route_pairs": 8
+  },
+  "costs_exact_eur": {
+    "A": "239.9481111111111111111111111",
+    "B": "240.9374444444444444444444444",
+    "B_minus_A": "0.9893333333333333333333333",
+    "A_fixed": "120.0",
+    "A_km": "61.632",
+    "A_driver": "58.31611111111111111111111111",
+    "B_fixed": "130.0",
+    "B_km": "51.388",
+    "B_driver": "59.54944444444444444444444445"
+  },
+  "costs_rounded_eur": {
+    "A": "239.95",
+    "B": "240.94",
+    "B_minus_A": "0.99"
+  },
+  "routes": {
+    "A_km": "85.6",
+    "B_total_km": "88.6",
+    "B_vehicle_km": [
+      "37.0",
+      "51.6"
+    ]
+  },
+  "driver_hours": {
+    "A": "3.152222222222222222222222222",
+    "B_total": "3.218888888888888888888888889",
+    "B_each": [
+      "1.322222222222222222222222222",
+      "1.896666666666666666666666667"
+    ]
+  },
+  "completion_hours": {
+    "A": "3.152222222222222222222222222",
+    "B": "1.896666666666666666666666667",
+    "reduction_pct": "39.83080719069439548819175184"
+  },
+  "break_even": {
+    "A_km_price_eur_km": "0.7315576323987538940809968842",
+    "A_rent_price_eur_day": "120.9893333333333333333333333"
+  },
+  "limitations": [
+    "Distanze stradali stimate e simmetrizzate, non tratte geocodificate certificate",
+    "Ipotesi di velocita media costante, servizi fissi e costi unitari ipotetici",
+    "I due veicoli partono nello stesso istante per il confronto dei tempi"
+  ]
+}

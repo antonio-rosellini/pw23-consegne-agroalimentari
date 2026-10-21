@@ -1,0 +1,21 @@
+# File temporanei Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editor e sistema operativo
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# File temporanei e locali
+*.tmp
+*.bak
+*.log
