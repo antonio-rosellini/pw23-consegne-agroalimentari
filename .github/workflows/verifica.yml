@@ -1,0 +1,22 @@
+name: Verifica del progetto
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - name: Recupera il codice
+        uses: actions/checkout@v4
+      - name: Prepara Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Controlla l'applicativo
+        run: python -m unittest discover -s tests -v
